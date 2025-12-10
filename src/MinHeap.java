@@ -6,8 +6,8 @@ public class MinHeap {
 		this.minHeap= new int [capacity];
 		this.size=0;
 	}
-	
-	public void heapifyUp(int index) {//nếu node có giá trị nhỏ hơn root cha thì đẩy node con lên vị trí 
+	//nếu node con có giá trị nhỏ hơn cha thì đẩy node con lên vị trí cha  
+	public void heapifyUp(int index) {
 		while(index>0)
 		{
 			int parent=(index-1)/2;
